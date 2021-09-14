@@ -25,7 +25,7 @@ namespace Lab02ConsoleCalculator
             switch (operation_num)
             {
                 case 1:
-                    //do a add
+                    //do a add and some stuff
                     break;
 
                 case 2:
