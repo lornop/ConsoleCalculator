@@ -45,4 +45,9 @@ namespace Lab02ConsoleCalculator
 
         }
     }
+
+    class Calculator
+    {
+         
+    }
 }
