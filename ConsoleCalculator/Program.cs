@@ -26,14 +26,29 @@ namespace Lab02ConsoleCalculator
             string num1, num2, operation = "";                                                                //These need to be strings to be read from the keyboard
             double number1, number2 = 0;
             int operation_choice = 0;
-
+            bool canconvert;
 
             //***** Start the main code
             Console.WriteLine("Welcome to the Calculator program");
-            Console.Write("Enter a number:");
-            num1 = Console.ReadLine();
-            Console.Write("Enter the another number:");
-            num2 = Console.ReadLine();
+            
+            do
+            {
+                Console.Write("Enter a number:");
+                num1 = Console.ReadLine();
+                canconvert = double.TryParse(num1, out number1);
+
+            } while (canconvert == false);
+
+
+            do
+            {
+                Console.Write("Enter another number:");
+                num2 = Console.ReadLine();
+                canconvert = double.TryParse(num2, out number1);
+
+            } while (canconvert == false);
+
+
             Console.Write(@"What do you want to do with the numbers?
                           1 = Add
                           2 = Subtract
@@ -41,9 +56,13 @@ namespace Lab02ConsoleCalculator
                           4 = Divide
                           :");
             operation = Console.ReadLine();
-            
-            
+            operation_choice = Convert.ToInt32(operation);
+
             //    ToDouble(String) and ToInt32(String)
+
+
+
+
 
 
 
@@ -63,7 +82,7 @@ namespace Lab02ConsoleCalculator
 
 
 
-
+    }
 
 
 
