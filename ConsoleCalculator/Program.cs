@@ -24,31 +24,42 @@ namespace Lab02ConsoleCalculator
             
             //***** Declare some variables 
             string num1, num2, operation = "";                                                                //These need to be strings to be read from the keyboard
-            
+            double number1, number2 = 0;
+            int operation_choice = 0;
 
 
             //***** Start the main code
             Console.WriteLine("Welcome to the Calculator program");
-            Console.WriteLine("Enter a number:");
+            Console.Write("Enter a number:");
             num1 = Console.ReadLine();
-            Console.WriteLine("Enter the another number:");
+            Console.Write("Enter the another number:");
             num2 = Console.ReadLine();
-            Console.WriteLine("What do you want to do with the numbers?");
-            Console.WriteLine(@"1 = Add
-                                2 = Subtract
-                                3 = Multiply
-                                4 = Divide");
+            Console.Write(@"What do you want to do with the numbers?
+                          1 = Add
+                          2 = Subtract
+                          3 = Multiply
+                          4 = Divide
+                          :");
             operation = Console.ReadLine();
-
             
+            
+            //    ToDouble(String) and ToInt32(String)
+
+
+
+
 
         }
     }
 
     class Calculator
     {
+        static double addition(double number1, double number2, int operation_num)
+        {
+            double result = 0;
 
-    }
+            return result;
+        }
 
 
 
