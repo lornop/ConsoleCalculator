@@ -4,12 +4,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * Loren Olsen
+ * ECET 230 - Wayne
+ * Lab 02 - Console Calculator
+ * 16 Sep 2021
+ * 
+ * A program to do some number crunching on the commandline.
+ * First shot at making a new class and running fucntions from another class
+ */
+
 namespace Lab02ConsoleCalculator
 {                                                                                                  //Theres a close bracket at the end of the commented out code at the bottom. 
     class Program
     {
+
         static void Main(string[] args)
         {
+            
+            //***** Declare some variables 
+            string num1, num2, operation = "";                                                                //These need to be strings to be read from the keyboard
+            
+
+
+            //***** Start the main code
+            Console.WriteLine("Welcome to the Calculator program");
+            Console.WriteLine("Enter a number:");
+            num1 = Console.ReadLine();
+            Console.WriteLine("Enter the another number:");
+            num2 = Console.ReadLine();
+            Console.WriteLine("What do you want to do with the numbers?");
+            Console.WriteLine(@"1 = Add
+                                2 = Subtract
+                                3 = Multiply
+                                4 = Divide");
+            operation = Console.ReadLine();
+
+            
 
         }
     }
